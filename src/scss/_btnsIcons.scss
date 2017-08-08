@@ -1,0 +1,89 @@
+.btn {
+	@extend %btn;
+	background: $accentcolor;
+	border-radius: 5px;
+	color: #fff;
+	padding: 10px 20px;
+	transition: $time;
+	&:hover {
+		background: lighten($accentcolor, 5%);
+	}
+	&:active {
+		background: darken($accentcolor, 5%);
+	}
+}
+.icon {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-repeat: no-repeat;
+	transition: $time;
+	&-notification {
+		background-image: url("../svg/notifications.svg");
+		&:hover {
+			background-image: url("../svg/notifications-hover.svg");
+		}
+	}
+	&-chat {
+		background-image: url("../svg/chat.svg");
+		&:hover {
+			background-image: url("../svg/chat-hover.svg");
+		}
+	}
+	&-search {
+		background-image: url("../svg/search.svg");
+	}
+	&-feed {
+		background-image: url("../svg/feed.svg");
+	}
+	&-ask {
+		background-image: url("../svg/ask.svg");
+	}
+	&-companies {
+		background-image: url("../svg/companies.svg");
+	}
+	&-service {
+		background-image: url("../svg/services.svg");
+	}
+}
+.menu li a:hover {
+	.icon-feed {
+		background-image: url("../svg/feed-hover.svg");
+	}
+	.icon-ask {
+		background-image: url("../svg/ask-hover.svg");
+	}
+	.icon-companies {
+		background-image: url("../svg/companies-hover.svg");
+	}
+	.icon-service {
+		background-image: url("../svg/services-hover.svg");
+	}
+}
+#mask {
+	position:absolute;
+	top: 0;
+	width: 100%;
+	z-index:9000;
+	background-color:#000;
+	opacity: 0.8;
+}
+#boxes .popUp {
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 18px;
+	padding: 20px 50px 7px;
+	position:fixed;
+	text-align: center;
+	transform: translateX(-50%);
+	left:50%;
+	top: 150px;
+	width: 350px;
+	z-index:9999;
+}
+#boxes .popUp {
+	background-color:#ffffff;
+	.btn {
+		margin-top: 20px;
+	}
+}

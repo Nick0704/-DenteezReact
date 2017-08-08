@@ -1,0 +1,96 @@
+// Base Style
+@import "base/_mixin";		// миксины
+@import "base/_fonts";		// шрифты
+@import "base/variables";	// переменные
+@import "base/extend";		// расширения
+@import "base/_reset";		//
+
+//	Style
+@import "some";			    // стили основные
+@import "btnsIcons";	  // кнопки, иконки
+@import "form";         // стили формы
+@import "header";		    // стили шапки
+@import "footer";		    // стили футера
+@import "sidebar";		  // стили виджетов сайдбара
+
+.main {
+  &-autorized {
+    padding: 74px 0 15px;
+  }
+  &-unautorized {
+    background: url("../img/bg.jpg") repeat;
+    position: relative;
+  }
+  &-content {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 970px;
+    @include clearfix;
+  }
+
+}
+.content {
+  box-sizing: border-box;
+  padding: 5px 0;
+  width: calc(100% - 484px);
+}
+.content-header {
+  padding: 0 15px;
+  @include clearfix;
+  .btn {
+    font-size: 14px;
+  }
+}
+.categories {
+  border: 1px solid $bordercolor;
+  border-radius: 5px;
+  margin-top: 18px;
+  display: block;
+  padding: 15px 6px;
+  @include clearfix;
+}
+.icon-wrap {
+  width: 140px;
+  height: 140px;
+  border: 1px solid $bordercolor;
+  display: inline-block;
+  position: relative;
+}
+.category-item {
+  width: 140px;
+  margin: 0 8px;
+  display: inline-block;
+  position: relative;
+  @include clearfix;
+  &:hover {
+    .icon-wrap {
+      background: #f4f7fb;
+    }
+    .category-title {
+      color: $accentcolor;
+    }
+  }
+}
+.category {
+  @extend %cam;
+  width: 80px;
+  height: 80px;
+}
+.category-title {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  color: #1c2534;
+  width: 140px;
+  height: 33px;
+  margin: 13px 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@import "adaptive";			// стили адаптивки
+
+
+
+
+

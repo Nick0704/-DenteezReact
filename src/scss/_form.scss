@@ -1,0 +1,98 @@
+.form {
+ width: 750px;
+ margin: 0 auto;
+ position: relative;
+ top: -100px;
+ &-body {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  span {
+   color: #c1c1c1;
+   display: inline-block;
+   margin-bottom: 15px;
+   sup {
+    vertical-align: super;
+    font-size: smaller;
+   }
+  }
+  .wrong-data {
+   color: #fb6363;
+   font-size: 12px;
+   display: block;
+   text-align: center;
+   margin-bottom: 0;
+  }
+  .incorrect {
+   border-color: #fb6363;
+  }
+  .correct {
+   border-color: $accentcolor;
+  }
+ }
+ label {
+  display: block;
+  margin-bottom: 20px;
+  @include clearfix;
+ }
+ input, select, textarea {
+  display: block;
+  height: 50px;
+  margin: 20px 0 10px;
+  border: 1px solid #c8cdd5;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: $font;
+  line-height: 50px;
+  padding: 0 20px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+ }
+ .select-type {
+  option:first-child {
+   font-size: 20px;
+  }
+ }
+ textarea {
+  height: 150px;
+  line-height: 1.1;
+  padding: 10px;
+ }
+ .btn {
+  width: 100%;
+  margin-top: 20px;
+ }
+}
+
+.user-data {
+ @include clearfix;
+ label {
+  width: calc(50% - 10px);
+  &:first-child {
+   margin-right: 20px;
+  }
+ }
+}
+#textarea-length {
+ margin: 0;
+ color: #000;
+}
+.photo-item{
+ border: 1px solid $bordercolor;
+ border-radius: 5px;
+ width: 130px;
+ height: 130px;
+ background: #f7f7f7;
+ padding: 30px 17px;
+ text-align: center;
+ span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #7c8695;
+ }
+ p {
+  font-size: 12px;
+  color: #c2c2c4;
+ }
+}
