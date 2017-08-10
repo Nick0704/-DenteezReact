@@ -27,8 +27,8 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             outputPath: '/img/',
-          },
-        },
+          }
+        }
       },
       {
         test: /\.(svg|ttf|eot|woff2?)$/,
@@ -41,8 +41,8 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             outputPath: '/fonts/'
-          },
-        },
+          }
+        }
       },
       {
         test: /\.js$|\.jsx$/,
@@ -65,7 +65,11 @@ module.exports = {
           path.resolve(__dirname, "src/svg")
         ],
         use: {
-          loader: 'svg-url-loader',
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: '/svg/'
+          }
         }
       }
     ],

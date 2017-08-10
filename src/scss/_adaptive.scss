@@ -1,5 +1,7 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  background: url("../img/logo-2x.png");
+  .logo img {
+    background: url("../img/logo-2x.png");
+  }
 }
 @media only screen and (max-width : 1450px) {
   .category-item {

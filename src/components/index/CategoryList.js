@@ -14,10 +14,9 @@ class CategoryList extends Component {
   componentDidMount() {
     fetch('http://504080.com/api/v1/services/categories',{
       method: "GET",
-      //Раскомментируйте для показа категорий
-      // headers: {
-      //   "Authorization": "a094968dbd3d3d4f73059b32634b7968ea026830"
-      // }
+      headers: {
+        "Authorization": "b283c704320647f647e9627efc2769491954eb54"
+      }
     })
       .then(response => {
         console.log(response);

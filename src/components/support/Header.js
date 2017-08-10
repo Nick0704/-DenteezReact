@@ -7,7 +7,7 @@ class Header extends Component {
       <header className="support-header">
         <div className="support-header-content">
           <div className="top-line">
-            <Link className="logo fl" to="/"><img src={"img/logo.png"} alt="Logo" /></Link>
+            <Link className="logo-wrap fl" to="/"><div className="logo"/></Link>
             <button className="btn fr">Log in Now</button>
           </div>
           <div className="page-title">

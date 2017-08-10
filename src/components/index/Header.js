@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <header id="header" className="header">
         <div className="top-line">
-          <Link className="logo fl" to="/"><img src={"img/logo.png"} alt="Logo" /></Link>
+          <Link className="logo-wrap fl" to="/"><div className="logo"/></Link>
           <div className="top-panel fl">
            <SearchInput />
             <div className="account-panel fl">

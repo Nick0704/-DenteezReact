@@ -20,22 +20,28 @@ class LeftSidebar extends Component {
           <article>
             <img src={"photo/company1.jpg"} className="fl" alt={""} />
             <a href="#">Company Name</a>
-            <span>Manufacturer</span>
-            <span>Belgrade, Serbia</span>
+            <p>
+              <span>Manufacturer</span>
+              <span>Belgrade, Serbia</span>
+            </p>
             <a href="#" className="follow">Follow Now</a>
           </article>
           <article>
             <img src={"photo/company2.jpg"} className="fl" alt={""} />
             <a href="#">Company Name</a>
-            <span>Service Provider</span>
-            <span>New York, USA</span>
+            <p>
+              <span>Service Provider</span>
+              <span>New York, USA</span>
+            </p>
             <a href="#" className="follow">Follow Now</a>
           </article>
           <article>
             <img src={"photo/company3.jpg"} className="fl" alt={""} />
             <a href="#">Company Name</a>
-            <span>Supplier</span>
-            <span>London, England</span>
+            <p>
+              <span>Supplier</span>
+              <span>London, England</span>
+            </p>
             <a href="#" className="follow">Follow Now</a>
           </article>
         </section>
